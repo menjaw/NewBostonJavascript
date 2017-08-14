@@ -30,7 +30,7 @@ document.write("Your new price is: " + "<b>" + newPrice + " kr." + "</b>" + " fo
 
 
 
-//Statements that is printed out on the HTML page
+//Statements that are printed out on the HTML page
 document.write("<h1>Hey brown cow!</h1> <h2>What is the date now?</h2>" + Date() + "<hr>");
 
 
