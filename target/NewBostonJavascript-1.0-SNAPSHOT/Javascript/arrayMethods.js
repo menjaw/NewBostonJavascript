@@ -24,27 +24,35 @@ document.getElementById("reduceArrayComma").innerHTML = "Array as comma seperate
 
 
 //Add item at the start of the array with the unshift() method
-document.getElementById("addItemStart1").innerHTML ="There are now: " + girls.unshift(" Frida", " Daja ") + " girl names in the array"; 
-document.getElementById("addItemStart2").innerHTML = "There are now: " + boys.unshift(" Simon", " Lucke ") + " boy names in the array"; 
-document.getElementById("addItemStart3").innerHTML = "There are now: " + all.unshift(" Sherry", " Heninrich", " Albert", " Eva ") + " names in the array"; 
+document.getElementById("addItemStart1").innerHTML = "There are now: " + "<b>" + girls.unshift(" Frida", " Daja ") + "</b>" + " girl names in the array";
+document.getElementById("addItemStart2").innerHTML = "There are now: " + "<b>" + boys.unshift(" Simon", " Lucke ") + "</b>" + " boy names in the array";
+document.getElementById("addItemStart3").innerHTML = "There are now: " + "<b>" + all.unshift(" Sherry", " Heninrich", " Albert", " Eva ") + "</b>" + " names in the array";
 
 //Add item in the end at the array with the push() method
-document.getElementById("addItemEnd1"). innerHTML = "There are now: " + girls.push(" Anne-lise", " Vera") + " girl names in the array";
-document.getElementById("addItemEnd2"). innerHTML = "There are now: " + boys.push(" Anders", " Brian") + " boy names in the array";
-document.getElementById("addItemEnd3"). innerHTML = "There are now: " + all.push(" Ann", " Kasper", " Viggo") + " girl names in the array";
+document.getElementById("addItemEnd1").innerHTML = "There are now: " + "<b>" + girls.push(" Anne-lise", " Vera") + "</b>" + " girl names in the array";
+document.getElementById("addItemEnd2").innerHTML = "There are now: " + "<b>" + boys.push(" Anders", " Brian", "Frede") + "</b>" + " boy names in the array";
+document.getElementById("addItemEnd3").innerHTML = "There are now: " + "<b>" + all.push(" Ann", " Kasper", " Viggo") + "</b>" + " girl names in the array";
 
 //Print out all 3 arrays with the new names added
-document.getElementById("printAddArrays").innerHTML = "Girl array with new names: " + girls + "<br>" + 
-                                                  "Boy array with new names: " + boys + "<br>" +
-                                                  "The All array with new names: " + all;                                               
+document.getElementById("printAddItem").innerHTML = "Girl array with new names: " + girls + "<br>" +
+        "Boy array with new names: " + boys + "<br>" +
+        "The All array with the new added names: " + all;
 
 
 
 //Remove the first item of the array with the shift() method
-document.getElementById("removeItemStart").innerHTML = girls.shift();
-document.getElementById("removeItemStart").innerHTML = boys.shift();
+document.getElementById("removeItemStart1").innerHTML = "Girls: " + "<b>" + girls.shift() + "</b>" + " is removed from the list";
+document.getElementById("removeItemStart2").innerHTML = "Boys: " + "<b>" + boys.shift() + "</b>" + " is removed from the list";
+document.getElementById("removeItemStart3").innerHTML = "All: " + "<b>" + all.shift() + "</b>" + " is removed from the list";
 
 
 //Remove item at the end of the array with the pop() method
-document.getElementById("removeItemEnd").innerHTML = girls.pop();
-//document.getElementById("removeItemEnd").innerHTML = boys;
+document.getElementById("removeItemEnd1").innerHTML = "Girls: " + "<b>" + girls.pop() + "</b>" + " is removed from the list";
+document.getElementById("removeItemEnd2").innerHTML = "Boys: " + "<b>" + boys.pop() + "</b>" + " is removed from the list";
+document.getElementById("removeItemEnd3").innerHTML = "All: " + "<b>" + all.pop() + "</b>" + " is removed from the list";
+
+//Print out all 3 arrays with the new names added
+document.getElementById("printRemoveItem").innerHTML = "Girl array without the removed names: " + girls + "<br>" +
+        "Boy array without the removed names: " + boys + "<br>" +
+        "The All array without the removed names: " + all;
+
