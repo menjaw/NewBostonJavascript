@@ -40,7 +40,6 @@ document.getElementById("printAddItem").innerHTML = "Girl array with new names: 
         "The All array with the new added names: " + all;
 
 
-
 /*REMOVE THE FIRST AND LAST ITEM IN ARRAY*/
 //Remove the first item of the array with the shift() method
 document.getElementById("removeItemStart1").innerHTML = "Girls: " + "<b>" + girls.shift() + "</b>" + " is removed from the list";
@@ -74,11 +73,23 @@ document.getElementById("printAddAnywhere").innerHTML = "Girl array with new nam
 
 //Remove existing item from a specific place in the array with the splice() method
 //SYNTAX: array.splice(index, howmany items to be removed)
-document.getElementById("removeAnywhere1").innerHTML = girls.splice(4,1);
-document.getElementById("removeAnywhere2").innerHTML = boys.splice(2,2);
+document.getElementById("removeAnywhere1").innerHTML = girls.splice(4, 1);
+document.getElementById("removeAnywhere2").innerHTML = boys.splice(2, 2);
 document.getElementById("removeAnywhere3").innerHTML = all.splice(8, all.length);
 
 //Print all 3 arrays with the new added names
-document.getElementById("printRemoveAnywhere").innerHTML = "Girl array with new names: " + girls + "<br>" +
-        "Boy array with new names: " + boys + "<br>" +
-        "The All array with the new added names: " + all;
+document.getElementById("printRemoveAnywhere").innerHTML = "Girl-array with new names: " + girls + "<br>" +
+        "Boy-array with new names: " + boys + "<br>" +
+        "The-All array with the new added names: " + all;
+
+
+//Reverse array
+document.getElementById("reverseArray").innerHTML = "The girl-array reversed: " + girls.reverse() + "<br>" +
+        "The boy-array reversed: " + boys.reverse() + "<br>" +
+        "The all-array reversed: " + all.reverse() + "<br>";
+
+
+//Sort array
+document.getElementById("sortArray").innerHTML = "Girl-array sorted without compareFunction [" + girls.sort() + "]";
+
+
